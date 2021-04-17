@@ -49,10 +49,10 @@
 
 
     //################## select RFID reader ##############################
-    #define RFID_READER_TYPE_MFRC522_SPI    // use MFRC522 via SPI
+    //#define RFID_READER_TYPE_MFRC522_SPI    // use MFRC522 via SPI
     //#define RFID_READER_TYPE_MFRC522_I2C  // use MFRC522 via I2C
     //#define RFID_READER_TYPE_PN5180       // use PN5180
-    //#define RFID_READER_TYPE_PN532_SPI        // use PN532 via SPI
+    #define RFID_READER_TYPE_PN532_SPI        // use PN532 via SPI
     //#define RFID_READER_TYPE_PN532_I2C        // use PN532 via I2C
     //#define RFID_READER_TYPE_PN532_UART       // use PN532 via UART
 
@@ -111,7 +111,8 @@
     #define BUTTON_0_SHORT    CMD_NEXTTRACK
     #define BUTTON_1_SHORT    CMD_PREVTRACK
     #define BUTTON_2_SHORT    CMD_PLAYPAUSE
-    #define BUTTON_3_SHORT    CMD_MEASUREBATTERY
+    // #define BUTTON_3_SHORT    CMD_MEASUREBATTERY
+    #define BUTTON_3_SHORT    CMD_PLAYPAUSE
     #define BUTTON_4_SHORT    CMD_NOTHING
     #define BUTTON_5_SHORT    CMD_NOTHING
 
